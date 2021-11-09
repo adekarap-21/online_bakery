@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Puff</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+      <header class="header">
+
+          <a href="#" class="logo"> <i class="fas fa-birthday-cake"></i> dream puff
+          </a>
+
+          <nav class="navbar">
+              <a href="/index">home</a>
+              <a href="#about">About us</a>
+              <div class="dropdown">
+                    <button class="dropbtn">Categories
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                  <a href="/cakes">Cakes</a>
+                  <a href="/cookies">Cookies</a>
+                  <a href="/snacks">Snacks</a>
+                  <a href="/muffines&donut">Muffines and Donut</a>
+                </div>
+              </div> 
+              <a href="#category">Products</a>
+              <a href="#testimonials">review</a>
+              <a href="/index/contacts">Contact Us</a>
+            </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>chicken</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $19.69/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form class="login-form">
+            <p> <a href="/login">Login Here</a> </p>
+            <p>don't have an account <a href="/signup">create now</a></p>
+        </form>
+        
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media.istockphoto.com/photos/party-cupcakes-picture-id1210165688?k=20&m=1210165688&s=612x612&w=0&h=t06V62huXNcHdxV1wpVJw66Ah8gyWtX65U9whqXb-rw="
+                    class="d-block w-100" alt="...">
+               
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/photos/beautiful-cookies-assorted-closeup-background-horizontal-top-view-picture-id1035053764?k=20&m=1035053764&s=612x612&w=0&h=rkicJ_mQVsnKBSmfceZaQA7VLR7TwoQOMECbgy1jFxA="
+                    class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/photos/delicious-chocolate-zucchini-brownies-picture-id1255426185?k=20&m=1255426185&s=612x612&w=0&h=WReL7xWKZPVZ-UtsEmtSLxBJNWFsv_fCPUiV7U3sNME="
+                    class="d-block w-100" alt="...">
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--                                          about section starts                                   -->
+
+<section class="about-section sec-padding" id="about">
+  <div class="container">
+   <div class="row">
+    <div class="section-title">
+     <h2 data-title="our story" data-aos="fade-up">about us</h2>
+    </div>
+   </div>
+   <div class="row">
+     <div class="about-text" data-aos="fade-right">
+      <h3>Welcome to Dream Puff </h3>
+      <p>We welcome you to sit back, unwind and appreciate the lovely sights and hints of the ocean while our best gourmet expert sets you up a scrumptious dinner utilizing the best and freshest ingredients.
+      "Dream Puff" legacy comes for the food lovers for all over the world!! . The Owner was worked for people in general and has advanced into a combination between exquisite chic and contemporary fine charge.
+       </p>
+      <p> Enjoy our dazzling dishes and make the most of your eating background with us!
+      </p>
+      <a href="#category" class="btn btn-default"> check our menu</a>
+     </div>
+     <div class="about-img" data-aos="fade-right">
+      <div class="img-box">
+       <h3>15+ years experience </h3>
+       <img src="https://media.istockphoto.com/photos/bakery-ingredients-and-tools-picture-id594077390?k=20&m=594077390&s=612x612&w=0&h=1qNuyLMkIHxCu5rmtlpgEXgaRXnD5CK4ddce5zjXtMQ="
+        alt="about img">
+      </div>
+      </div>
+   </div>
+  </div>
+ </section>    
+ 
+
+<!-------------------------------------------------- Category  ---------------------------------------------------------->
+
+    <section class="category" id="category">
+        <div class="header-1">
+        <h1 class="heading">shop by category</h1></div>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://media.istockphoto.com/photos/delicious-brownies-with-melted-chocolate-on-a-stack-picture-id1191431503?k=20&m=1191431503&s=612x612&w=0&h=rBTP8yei80ZMUsIB8rQtbBKnmeD1xw7cbEtUWx0oGbY="
+                    alt="">
+                <div class="content">
+                    <h1>Cakes</h1>
+                    <a href="#cakes" class="btn">shop now</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="https://media.istockphoto.com/photos/butter-toffee-crunch-chocolate-chip-cookies-picture-id1182279813?k=20&m=1182279813&s=612x612&w=0&h=o9tVs5PK_P8yMUeGd2eiL2e008DR2V5EKuUtuhAnTv8="
+                    alt="">
+                <div class="content">
+                    <h1>cookies</h1>
+                    <a href="#cookies" class="btn">shop now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/photos/crispy-rusk-cake-rusk-over-white-background-picture-id1289370932?k=20&m=1289370932&s=612x612&w=0&h=61YQEcUBneRuBA6gK8TB6BTOINQDr1aZ_xmdt4G20yU=" alt="">
+                <div class="content">
+                    <h1>snacks</h1>
+                    <a href="#snacks" class="btn">shop now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/photos/homemade-autumn-pumpkin-muffin-picture-id516688047?k=20&m=516688047&s=612x612&w=0&h=1IsFta6ehWQqKBMEf_ymzBjY4zSmwyTtoodWTwHywuk=" alt="">
+                <div class="content">
+                    <h1>Muffines and Donut</h1>
+                    <a href="#muffines" class="btn">shop now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------  catogeory option  -------------------------------------------------------------------->
+  <section class="featured" id="featured">
+
+    <h1 class="heading" id="cakes"> <span>Cakes</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/img-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Half black white</h3>
+                    <div class="price"><b>Rs. 456 </b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.bakingo.com/butterscotch-cake-A.jpg?tr=h-240,w-320?tr=w-266,dpr-1.5,q-70" alt="">
+                </div>
+                <div class="content">
+                    <h3>chocolate delight</h3>
+                    <div class="price"><b>Rs. 280</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://media.bakingo.com/birthday-chocolate-overload-pinata-cake-750gm-pina2163choc-A.jpg?tr=h-240,w-320?tr=w-266,dpr-1.5,q-70" alt="">
+                </div>
+                <div class="content">
+                    <h3>Chocolate ball</h3>
+                    <div class="price"><b>Rs. 550</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://media.bakingo.com/lip-smacking-chocolate-truffle-cake-cake2161choc-A.JPG?tr=h-240,w-320?tr=w-266,dpr-1.5,q-70" alt="">
+                </div>
+                <div class="content">
+                    <h3>exotic chocolate</h3>
+                    <div class="price"><b>Rs. 300</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://media.bakingo.com/ferrero-rocher-cake-A.jpg?tr=h-240,w-320?tr=w-266,dpr-1.5,q-70" alt="">
+                </div>
+                <div class="content">
+                    <h3>ferrero rocher</h3>
+                    <div class="price"><b>Rs. 350</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/pink-weeding-cake-picture-id1169187284?k=20&m=1169187284&s=612x612&w=0&h=nkYbjbfW74JYuMHwSeFGNQPwZ76G941iM_ma-1VaBXU=" alt="">
+                </div>
+                <div class="content">
+                    <h3>creamy classic chocolate</h3>
+                    <div class="price"><b>Rs. 1350</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/stunning-cakes-professional-celebration-wedding-birthday-party-picture-id1282162443?k=20&m=1282162443&s=612x612&w=0&h=huFSXT0BcfUvn_X7wi7ukA8ZlhYYfPKCW8JjnzhjiG8=" alt="">
+                </div>
+                <div class="content">
+                    <h3>white red velvet</h3>
+                    <div class="price"><b>Rs. 350</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.bakingo.com/pineapple-pinata-cake-450gm-pina2265pine-A.jpg?tr=h-240,w-320?tr=w-266,dpr-1.5,q-70" alt="">
+                </div>
+                <div class="content">
+                    <h3>Mango pinata</h3>
+                    <div class="price"><b>Rs. 450</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-------------------------------------------------------------------------------------->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="cookies"> <span>Cookies</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/preparing-chocolate-chip-cookies-picture-id905563616?k=20&m=905563616&s=612x612&w=0&h=sX8-TxqjnJgm_0JholuaRYRUXsX-vDWra_4MRo8iP4U=" alt="">
+                </div>
+                <div class="content">
+                  <h3>choco chips</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 180</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/plate-of-red-velvet-cookies-picture-id171252521?k=20&m=171252521&s=612x612&w=0&h=Ld9FAAnSqi5gbZC6I3CbJfQl-8Ku1mwEfdt_Ai0J8lA=" alt="">
+                </div>
+                <div class="content">
+                  <h3>red velvet</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 230</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/home-made-sweet-biscuits-with-mixed-nuts-on-gray-background-picture-id1258131895?k=20&m=1258131895&s=612x612&w=0&h=M7ho17vN6l0W7h1qyFi9vH8jaFIehBp1k5qOIFvV82U=" alt="">
+                </div>
+                <div class="content">
+                  <h3>classic pista</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 190</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/cookies-and-milk-picture-id845120218?k=20&m=845120218&s=612x612&w=0&h=GaTeLsm239Fmnq6gNNv-AVvjG_1TaxUvjQZjm7v5OPk=" alt="">
+                </div>
+                <div class="content">
+                  <h3>classic</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 150</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/image-of-baked-homemade-carrot-coconut-and-chocolate-chip-cookies-picture-id1225394409?k=20&m=1225394409&s=612x612&w=0&h=GcN-53GEkpwvPlBDZEN2AGk6JecwZ9iFMMkXd4u1wqI=" alt="">
+                </div>
+                <div class="content">
+                  <h3>chocolate oats</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 170</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/smiling-cookies-picture-id815365258?k=20&m=815365258&s=612x612&w=0&h=cERrcbXJYHQelSpUsQDogG32W3LkJUQsarEUQMnQE6E=" alt="">
+                </div>
+                <div class="content">
+                  <h3>funny faces</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 200</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/delicious-tutti-frutti-cookies-or-biscuits-picture-id1266389975?k=20&m=1266389975&s=612x612&w=0&h=aUjhNBSFDAmezu4MTsFTd9CBM04e5KuqmljmKaHKlgc=" alt="">
+                </div>
+                <div class="content">
+                  <h3>tutti frutti</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 210</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/healthy-homemade-sweet-almond-cookies-or-biscuits-picture-id1266247585?k=20&m=1266247585&s=612x612&w=0&h=EVWO8kKS7YOUwO2Nj2_AbR85hsMp1K4YVpfzhMgnucA=" alt="">
+                </div>
+                <div class="content">
+                  <h3>classic almond</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 160</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!------------------------------------------------------------------------------------>
+
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="snacks"> <span>Snacks</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSie5ff7J-MLTiuUI5AKsVuasrI8nsCZyUrBA&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <h3>chocolate cream roll</h3>
+                    <div class="price"><b>Rs. 22</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="http://www.merwans.co.in/images/new%20menu/IMG_0049.jpg" alt="">
+                </div>
+                <div class="content">
+                  <h3>Kahri</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="http://www.merwans.co.in/images/new%20menu/IMG_0052.jpg" alt="">
+                </div>
+                <div class="content">
+                  <h3>Butter</h3>
+                  <p>500gm</p>
+                  <div class="price"><b>Rs. 32</b></div> 
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="http://www.merwans.co.in/images/new%20menu/IMG_0105.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Veg Puff</h3>
+                    <div class="price"><b>Rs. 20</b></div> 
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://i.pinimg.com/originals/cc/2e/01/cc2e01fbc23c05e5ee817dbd3d337afd.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>veg roll</h3>
+                    <div class="price"><b>Rs. 20</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="http://www.merwans.co.in/images/new%20menu/IMG_0102.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Panner Puff</h3>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/5:4/w_2815,h_2252,c_limit/milk-bread.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>White Bread</h3>
+                    <div class="price"><b>Rs. 20</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/indian-street-food-staple-bread-ladi-pav-picture-id1289369722?k=20&m=1289369722&s=612x612&w=0&h=8laM14G8WgsaLtLFpa0H6MTRrhFJlrC17VrX3-cylQI=" alt="">
+                </div>
+                <div class="content">
+                    <h3>pav</h3>
+                    <div class="price"><b>Rs. 24</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-------------------------------------------------------------------------------------------->
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="muffines"> <span>Muffines and Donut</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://assets.limetray.com/assets/user_images/menus/compressed/1627391924_MidnightBeauty1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Midnight Beauty</h3>
+                    <div class="price"><b>Rs. 45</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/sugar-donuts-picture-id174071227?k=20&m=174071227&s=612x612&w=0&h=gSpD2DOtWzwxCq3a3qdNG6U4UAAqsCTKy-aShTz2uHc=" alt="">
+                </div>
+                <div class="content">
+                    <h3>Sugar coated</h3>
+                    <div class="price"><b>Rs. 32</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://assets.limetray.com/assets/user_images/menus/compressed/1632202830_DT800x600.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>double trouble</h3>
+                    <div class="price"><b>Rs.35</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/vanilla-cupcakes-picture-id470047382?k=20&m=470047382&s=612x612&w=0&h=tb1fW0DQl7S-gUutX6a3--KOo-HUrQQVlW_NjuLak_s=" alt="">
+                </div>
+                <div class="content">
+                    <h3>classic Beauty</h3>
+                    <div class="price"><b>Rs. 20</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/red-velvet-cupcakes-picture-id135026473?k=20&m=135026473&s=612x612&w=0&h=z89Fs10Ky5poSJg3McDG72tnI3dp79cWguxZvfwzI2U=" alt="">
+                </div>
+                <div class="content">
+                    <h3>red velvet</h3>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/caramel-apple-cupcake-horizontal-picture-id180699149?k=20&m=180699149&s=612x612&w=0&h=-jLqS6zgyfVnO-89BYxxWJB3DA-elrEW9x_nn_lkdiQ=" alt="">
+                </div>
+                <div class="content">
+                    <h3>Apple Caramel</h3>
+                    <div class="price"><b>Rs. 45</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/cupcakes-picture-id1250904610?k=20&m=1250904610&s=612x612&w=0&h=poQEksdZp-SsC9ykPCeg7eysuTjG5NSO9QG4fy7V8-M=" alt="">
+                </div>
+                <div class="content">
+                    <h3>Blueberry</h3>
+                    <div class="price"><b>Rs. 38</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media.istockphoto.com/photos/chocolate-cupcakes-on-black-picture-id514057868?k=20&m=514057868&s=612x612&w=0&h=zQs0igFFyT5wiVnERbfU1xpDDiw5BBk0Cs0uTex-_6U=" alt="">
+                </div>
+                <div class="content">
+                    <h3>chocolate sprinkles</h3>
+                    <div class="price"><b>Rs. 32</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- --------------------------------------   deal section starts ---------------------------------------->
+
+<section class="deal" id="deals">
+  <div class="header-1">
+    <h1 class="heading">Deals of the day</h1></div>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">don't miss the deal</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam rerum laborum numquam saepe vero
+                    sint dicta mollitia, delectus doloremque. In maiores sed eum, dignissimos dolore obcaecati itaque.
+                    Quaerat, dolores esse.</p>
+                <div class="count-down">
+                    <div class="box">
+                        <h3 id="day">00</h3>
+                        <span>day</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="hours">00</h3>
+                        <span>hours</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="minute">00</h3>
+                        <span>minute</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="seconds">00</h3>
+                        <span>seconds</span>
+                    </div>
+                </div>
+                <a href="#category" class="btn">check out deal</a>
+            </div>
+            <video autoplay muted loop id="myVideo">
+              <source src="image/vid-2.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+    </section>
+
+
+<!-------------------------------------------------Gallery section------------------------------------------>
+<div class="header-1">
+        <h1 class="heading gal">Our Gallery</h1></div>
+<div class="image-gallery">
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/chocolate-and-candy-corn-cake-picture-id1036967460?k=20&m=1036967460&s=612x612&w=0&h=udXzhUFWq1HLoFVKFyjnGUY-iPoP6r2wBL0hWecPdJg=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/red-velvet-sponge-swiss-roll-with-fresh-raspberry-on-dark-background-picture-id1042314828?k=20&m=1042314828&s=612x612&w=0&h=SNWe7-oiQjW3OBwAB5hH-7DGEs7aFM5RcbZNwjhqc6M=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/cheesecake-with-caramel-sauce-picture-id1225491381?k=20&m=1225491381&s=612x612&w=0&h=lolIgOFlxIF4r7c_Mf3LiDeL14yhLJ08AoLgLM5ejt4=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/french-pastries-on-display-a-confectionery-shop-picture-id518468635?k=20&m=518468635&s=612x612&w=0&h=bqQ8DxDaH2qB6vKGxj2N4bYISFK2eaIpqBMngyFrEcU=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/dessert-chocolate-cake-picture-id155598375?k=20&m=155598375&s=612x612&w=0&h=wyjDWsZ3Q6PAmyURtSiSaaEC_xjSks2VQp-H2fAanw8=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/delicious-muffins-picture-id502977633?k=20&m=502977633&s=612x612&w=0&h=gBiF2Fqebh5yHn-LYKLVevJ8-zrIM3ib1xT7zRarSJs=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/basket-with-assorted-baking-products-picture-id695597866?k=20&m=695597866&s=612x612&w=0&h=aLE4-EoQM0AeO1nfBZH32W-4G9SdBeqrEAAxPDJAk1Q=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/cranberry-muffins-picture-id627796786?k=20&m=627796786&s=612x612&w=0&h=-MsB3ZCSeUmAI0M4h-8yMeg_0BHCQsMwMPq8LLeAXn8=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/closeup-photo-of-cupcake-with-buttercream-frosting-and-sprinkle-picture-id1192845519?k=20&m=1192845519&s=612x612&w=0&h=N5zVGDtf5N8yBhu2uLoB-POPdrVgNoZUGMMsiA19liU=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/sweet-donuts-and-cup-of-coffee-picture-id1138954991?k=20&m=1138954991&s=612x612&w=0&h=iR_qgOjZ9Cfdoxz0radzOJec11vrELREonM1ir2soSY=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/stack-of-assorted-donuts-copy-space-picture-id912109744?k=20&m=912109744&s=612x612&w=0&h=KfJqCDmBmA660ZDpBlZ4uwtJBGu-5zYYbpCgY1iOyKY=" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="https://media.istockphoto.com/photos/french-pastry-picture-id645542956?k=20&m=645542956&s=612x612&w=0&h=q_E8HwhFAxOzMZONyzU7hRxmCQlYYDLHJDRewrXHGPI=" alt="img.jpg"   />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+<!------------------------------------------------- Review Section  ------------------------------------------------------>
+
+<section class="testimonials-section sec-padding" id="testimonials">
+     <div class="container">
+       <div class="row">
+         <div class="section-title">
+           <div class="header-1">
+        <h1 class="heading">Reviews</h1></div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>Ruchika Rajput</h3>
+               <span>Customer</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-2.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+             Order a bunch of cake from here.<br>
+             fresh cake with lot of variety.<br>
+             the taste is awesome love the red velvet cake.
+
+           </p>
+           <div class="ratings">
+             <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+           </div>
+        </div>
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>Janvi Patil</h3>
+               <span>Customer</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-4.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+           This is an awesome place for online ordering of bakery Products<br>
+           cakes are  really good<br>
+           try classic pista cookies they are really awesome
+           </p>
+           <div class="ratings">
+             <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+
+           </div>
+        </div>
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>rahul singh</h3>
+               <span>Customer</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-3.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+            This is an awesome place for online ordering of bakery Products<br>
+            cakes are  really good<br>
+            try classic pista cookies they are really awesome
+
+           </p>
+           <div class="ratings">
+                <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+
+           </div>
+        </div>
+       </div> 
+     </div>
+   </section> 
+
+<!-------------------------------------------------- Footer section   ---------------------------------------------->
+
+<footer class="footer" id="contact">
+  
+    <video class="video" src="image/vid-1.mp4" muted loop autoplay ></video>
+      
+   <div class="conatiner">
+     <div class="row">
+        <div class="footer-item" >
+          <h3><i class="fas fa-map-marker-alt"></i>   our location</h3>
+          <p>xyz street, Sector-7,<br>Mumbai - 401101</p>
+        </div>
+        <div class="footer-item" >
+          <h3><i class="far fa-clock"></i>      opening hours</h3>
+          <p>Monday - Sunday <br>11:30 AM - 11:00 PM </p>
+        </div>
+        <div class="footer-item" >
+          <h3><i class="fas fa-phone-alt"></i>      contact us</h3>
+          <p>+91 1234568597</p>
+          <p>DreamPuff@gmail.com</p>
+          <div class="social-links">
+            <a href="#" ><i class="fab fa-facebook-f"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#" ><i class="fab fa-twitter"></i></a>
+            <a href="#" ><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+       </div> 
+        <div class="row">
+           <div class="copyright">
+             &copy; 2021 - All Rights are Reserved.
+           </div>
+        </div>
+     </div>
+   
+ </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/validateForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+          
+
+</body>
+
+</html>

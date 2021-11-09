@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Puff</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+      <header class="header">
+
+          <a href="#" class="logo"> <i class="fas fa-birthday-cake"></i> dream puff
+          </a>
+
+          <nav class="navbar">
+              <a href="index.html">home</a>
+             
+              <div class="dropdown">
+                    <button class="dropbtn">Categories
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                  <a href="/cakes">Cakes</a>
+                  <a href="/cookies">Cookies</a>
+                  <a href="#">Snacks</a>
+                  <a href="/muffines&donut">Muffines and Donut</a>
+                </div>
+              </div> 
+              <a href="#category">Products</a>
+              <a href="#testimonials">review</a>
+              
+
+
+            </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>chicken</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $19.69/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i1.wp.com/www.givemesomespice.com/wp-content/uploads/2014/10/P1180831.jpg?ssl=1"
+                    class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/photos/beautiful-cookies-assorted-closeup-background-horizontal-top-view-picture-id1035053764?k=20&m=1035053764&s=612x612&w=0&h=rkicJ_mQVsnKBSmfceZaQA7VLR7TwoQOMECbgy1jFxA="
+                    class="d-block w-100" alt="...">
+               
+            </div>
+            <div class="carousel-item">
+                <img src="https://stylesatlife.com/wp-content/uploads/2019/06/Different-Types-of-Bread-that-Deliciously-Tempt.jpg.webp"
+                    class="d-block w-100" alt="...">
+               
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+   
+
+<!-------------------------------------------------- Category  ---------------------------------------------------------->
+
+    <section class="category" id="category">
+        <div class="header-1">
+        <h1 class="heading">shop by category</h1></div>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://foodchoice.in/wp-content/uploads/2021/06/Butter-Khari.jpg"
+                    alt="">
+                <div class="content">
+                    <h1>Bakery Product</h1>
+                    <a href="#Choc-cake" class="btn">shop now</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="https://www.blendwithspices.com/wp-content/uploads/2021/08/paneer-puff-recipe.jpg"
+                    alt="">
+                <div class="content">
+                    <h1>Puffs</h1>
+                    <a href="#fruit-cake" class="btn">shop now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Fresh_made_bread_05.jpg" alt="">
+                <div class="content">
+                    <h1>Breads</h1>
+                    <a href="#wedd-cakes" class="btn">shop now</a>
+                </div>
+            </div>
+           
+            <div class="box">
+              <img src="https://aartimadan.com/wp-content/uploads/2018/11/Fruitcakefinal.jpg" alt="">
+              <div class="content">
+                  <h1>Raw Cakes</h1>
+                  <a href="#more" class="btn">shop now</a>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------  catogeory option  -------------------------------------------------------------------->
+  <section class="featured" id="featured">
+
+    <h1 class="heading" id="Choc-cake"> <span>Bakery Products</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://foodchoice.in/wp-content/uploads/2021/06/Butter-Khari.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Kahri</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://img1.exportersindia.com/product_images/bc-full/dir_125/3743843/jeera-kahri-1518697405-3651717.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Jeera kahri</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 35</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/km82d8w0/rusk/u/c/f/500-old-delhi-s-famous-fresh-crispy-soft-egg-cake-rusks-cake-original-imagf6knhnx45y9e.jpeg?q=70" alt="">
+                </div>
+                <div class="content">
+                    <h3>rusk</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://4.imimg.com/data4/JP/TN/MY-10298091/jeera-rusk-500x500.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>jeera rusk</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 35</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://www.bigbasket.com/media/uploads/p/l/40129901-5_2-fresho-signature-cake-rusk-chocolate.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>chocolate rusk</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 45</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://taazitokari.com/image/catalog/Coffee/jeera%20butter.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Butter</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 32</b></div>          
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://i.pinimg.com/originals/da/2c/88/da2c88683419309e38c31f7a54f87f44.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>jeera butter</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 38</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            
+
+            
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-------------------------------------------------------------------------------------->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="fruit-cake"> <span>Puffs</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://i.pinimg.com/originals/a7/69/64/a76964f0246d8e1e5457190b5c46d761.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Panner Puff</h3>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://www.blendwithspices.com/wp-content/uploads/2021/08/paneer-puff-recipe.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Veg Puff</h3>
+                    <div class="price"><b>Rs. 20</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="http://1.bp.blogspot.com/_Bsj07jy57o0/TIZVZK5ExiI/AAAAAAAAArM/Xj_zmWs8-jE/s1600/chicken+puffs.JPG" alt="">
+                </div>
+                <div class="content">
+                    <h3>cheese Puff</h3>
+                    <div class="price"><b>Rs. 27</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://i.pinimg.com/originals/cc/2e/01/cc2e01fbc23c05e5ee817dbd3d337afd.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>veg roll</h3>
+                    <div class="price"><b>Rs. 20</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://theyellowdaal.com/wp-content/uploads/2017/06/20170505092820_IMG_0956.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Panner roll</h3>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://i.ytimg.com/vi/rV5eUOmJeh8/maxresdefault.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>cheese Roll</h3>
+                    <div class="price"><b>Rs. 28</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-p/14/c5/bf/ef/photo2jpg.jpg"alt="">
+                </div>
+                <div class="content">
+                    <h3>veg pizza</h3>
+                    <div class="price"><b>Rs. 32</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://5.imimg.com/data5/PN/EO/MY-26547555/pan-pizza-chicken-500x500.png"alt="">
+                </div>
+                <div class="content">
+                    <h3>Panner pizza</h3>
+                    <div class="price"><b>Rs. 38</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!------------------------------------------------------------------------------------>
+
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="wedd-cakes"> <span>Breads</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/5:4/w_2815,h_2252,c_limit/milk-bread.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>white bread</h3>
+                    <div class="price"><b>Rs. 20</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Fresh_made_bread_05.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Brown bread</h3>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/sprouted-grain-bread-1296x728-feature.jpg?w=1155&h=1528"alt="">
+                </div>
+                <div class="content">
+                    <h3>whole wheat bread</h3>
+                    <div class="price"><b>Rs. 35</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://www.tarladalal.com/members/9306/procstepimgs/vegetable-grilled-sandwich_dsc7221-(2)-1-185569.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>grilled sandwich bread </h3>
+                    <div class="price"><b>Rs. 30</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <h3>Baguette bread</h3>
+                    <div class="price"><b>Rs. 35</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhlOCFTvvCOmfuC0yAAEyVTR8ZPM6L0Z4vtA&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pav</h3>
+                    <div class="price"><b>Rs. 24</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+           
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-------------------------------------------------------------------------------------------->
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="more"> <span>Raw Cakes</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://kfoods.com/images1/newrecipeicon/plain-cake_5818.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Mawa cake</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 50</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://i.ytimg.com/vi/5R9uZZpfKO4/maxresdefault.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>rava cake</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 60</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="https://b.zmtcdn.com/data/dish_photos/12c/75b7c6f9785c1d9730f47bcf6b2e812c.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>chocolate cake</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 55</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://aartimadan.com/wp-content/uploads/2018/11/Fruitcakefinal.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tutti frutti cake</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 65</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTunDRZ6sr-k70r_QRhrQ0Zo4PZTHAek9ndW6mJ32vyKWDsAriz2OXVIdrTiL-HHcfd21U&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <h3>vanilla swiss roll</h3>
+                   <p>500gm</p>
+                    <div class="price"><b>Rs. 40</b></div>
+                   <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZiiOFH0Yup97lmH-W1ghyQwSd4yfjTV2k4RkTvbWYQTvtfGmdHiwHNXBopQuXIf2Y58&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <h3>chocolate swiss roll</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 50</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Or-RU4XQCDCPR_ZDmRVCVpTOOTYL0gCuLDYZvvwuIQIdI0L9CKuwZ4QN7eHxSpTaXtg&usqp=CAU" alt="">
+                </div>
+                <div class="content">
+                    <h3>Strawberry swiss roll</h3>
+                    <p>500gm</p>
+                    <div class="price"><b>Rs. 45</b></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+<!------------------------------------------------- Review Section  ------------------------------------------------------>
+
+<section class="testimonials-section sec-padding" id="testimonials">
+     <div class="container">
+       <div class="row">
+         <div class="section-title">
+           <div class="header-1">
+        <h1 class="heading">Reviews</h1></div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>Ruchika Rajput</h3>
+               <span>Food blogger</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-2.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+              Vistied this place twice and loved the experience.<br>Ambiance is good.<br>Rates are resonable<br>The flavors have remains the same since the beginning<br>Must visit the this place onces.
+           </p>
+           <div class="ratings">
+             <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+           </div>
+        </div>
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>Janvi Patil</h3>
+               <span>Customer</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-4.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+           This is an awesome place for family lunch/dinner <br>Food is really good<br>Their manchurian are just awesome.<br>service is fast<br>Staff is also good as they Suggest you the good option.
+           </p>
+           <div class="ratings">
+             <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+
+           </div>
+        </div>
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>rahul singh</h3>
+               <span>Food blogger</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-3.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+            Just awesome food.<br>A good ambience place for family dining<br>Well known in Mumbai<br>Food quality is awesome.<br>Best for lunch time. 
+           </p>
+           <div class="ratings">
+                <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+
+           </div>
+        </div>
+       </div> 
+     </div>
+   </section> 
+
+<!-------------------------------------------------- Footer section   ---------------------------------------------->
+
+<footer class="footer" id="contact">
+  
+    <video class="video" src="image/vid-1.mp4" muted loop autoplay ></video>
+      
+   <div class="conatiner">
+     <div class="row">
+        <div class="footer-item" >
+          <h3><i class="fas fa-map-marker-alt"></i>   our location</h3>
+          <p>xyz street, Sector-7,<br>Mumbai - 401101</p>
+        </div>
+        <div class="footer-item" >
+          <h3><i class="far fa-clock"></i>      opening hours</h3>
+          <p>Monday - Sunday <br>11:30 AM - 11:00 PM </p>
+        </div>
+        <div class="footer-item" >
+          <h3><i class="fas fa-phone-alt"></i>      contact us</h3>
+          <p>+91 1234568597</p>
+          <p>DreamPuff@gmail.com</p>
+          <div class="social-links">
+            <a href="#" ><i class="fab fa-facebook-f"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#" ><i class="fab fa-twitter"></i></a>
+            <a href="#" ><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+       </div> 
+        <div class="row">
+           <div class="copyright">
+             &copy; 2021 - All Rights are Reserved.
+           </div>
+        </div>
+     </div>
+   
+ </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+          
+
+</body>
+
+</html>

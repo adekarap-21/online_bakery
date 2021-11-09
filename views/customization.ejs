@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Puff</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" type="text/css" href="/css/customization.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+      <header class="header">
+
+          <a href="/index" class="logo"> <i class="fas fa-birthday-cake"></i> dream puff
+          </a>
+
+          <nav class="navbar">
+              <a href="/index">home</a>
+             
+              <div class="dropdown">
+                    <button class="dropbtn">Categories
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                  <a href="/cakes">Cakes</a>
+                  <a href="/cookies">Cookies</a>
+                  <a href="/snacks">Snacks</a>
+                  <a href="/muffines&donut">Muffines and Donut</a>
+                </div>
+              </div> 
+            </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+        </div>
+
+        <!-- <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form> -->
+
+    </header>
+
+<!----------------------------------------------------------------------------------------------------------------------->
+
+    <section class="ftco-section img zack" id="order"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5">
+                    <div class="heading-section ftco-animate  mb-5 text-center">
+                        <span class="subheading">Order</span>
+                        <h2 class="mb-4 ">Your Cake</h2>
+                    </div>
+                    <form action="/custom" method="POST">
+                        <class class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-4  fs-3">
+                                    <div>
+                                    <label for="">Name</label></div>
+                                    <input type="text" class="form-control-lg col-10" placeholder="Your name" name="name"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3" >
+                                    <div>
+                                    <label for="">Email</label></div>
+                                    <input type="email" class="form-control-lg col-10" placeholder="your email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3" >
+                                    <div>
+                                    <label for="">Address</label></div>
+                                    <input type="text" class="form-control-lg col-10" placeholder="your Address" name="address">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4  fs-3">
+                                    <div>
+                                    <label for="">Phone</label></div>
+                                    <input type="text" class="form-control-lg col-10" placeholder="your phone no" name="phone">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3">
+                                    <div>
+                                    <label for="">Date</label></div>
+                                    <input type="text" class="form-control-lg" id="book_date" placeholder="dd/mm/yyyy" name="date">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3">
+                                    <div>
+                                    <label for="">Time</label></div>
+                                    <input type="text" class="form-control-lg" id="book_time" placeholder="Time" name="time">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3">
+                                    
+                                    <label for="">Cake Flavour</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="flavour" id="flavour" class="form-control-lg col-10">
+                                            <% for(let flavour of flavours){ %>
+                                                <option value="<%=flavour%>"><%=flavour%></option>
+                                            <% } %>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3">
+                                    <label for="">Kg</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="weight" id="weight" class="form-control-lg">
+                                            <% for(let weight of weights){ %>
+                                                <option value="<%=weight%>"><%=weight%></option>
+                                            <% } %>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3">
+                                    
+                                    <label for="">Cake Filling</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="filling" id="filling" class="form-control-lg col-10">
+                                            <<% for(let filling of fillings){ %>
+                                                <option value="<%=filling%>"><%=filling%></option>
+                                            <% } %>
+                                            
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-4 fs-3">
+                                    
+                                    <label for="">Cake icing</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                        <select name="icing" id="icing" class="form-control-lg col-10">
+                                            <% for(let icing of icings){ %>
+                                                <option value="<%=icing%>"><%=icing%></option>
+                                            <% } %>
+                                            
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div> 
+                            <label for="inputGroupFile02" class="form-label fs-3">photo for customization of your cake</label>
+                              <div class="mb-3">
+                                <label for="images" class="form-label">Choose image(s)...</label>
+                                <input class="form-control" type="file" id="images" name="image" multiple>
+                            </div>
+
+                            <div class="col-md-12 mt-3">
+                                <div class="form-group text-center">
+                                    <input type="submit" value="Order Your Cake"  class="btn btn-primary py-3 px-5">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- order a cake section ends -->
+       
+  
+
+    
+
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+          
+
+</body>
+
+</html>
